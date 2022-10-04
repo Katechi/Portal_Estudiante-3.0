@@ -1,0 +1,23 @@
+#footer {
+    background-color: #363839;
+    color: white;
+}
+
+#navbar{
+    background: #038ACE;
+    color: white;
+}
+
+#header {
+    background: #01568E; 
+    color: white;
+}
+
+.titulo-azul{
+    color: #01568E;
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+
+.nav-link{
+    color: #038ACE;
+}
