@@ -19,22 +19,9 @@
                 <div class="col">
                     <article class="card">
                         <div class="card-body">
-                            <div class="d-flex d-block">
+                            <div class="d-flex align-items-center">
                                 <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
-                                <div>
-                                    <strong class="text-white">Rodrigo Becerra</strong>
-                                    <div class="dropdown_toggle mb-3 d-flex">
-                                        <a href="#" class="dropdown-toggle p-0 text-white" id="dropdownUser1" data-bs-toggle="dropdown" >
-                                            <small class="text-white" >Ing. civil en Informática </small>
-                                        </a>
-                                        <ul id="carreras" class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="dropdownUser1">
-                                            <li><a class="dropdown-item mt-1" href="#">Ing. civil en Informática</a></li>
-                                            <li><a class="dropdown-item" href="#">Téc. en Redes</a></li>
-                                            <li><hr class="dropdown-divider m-1"></li>
-                                            <li><a class="dropdown-item mt-0 mb-1" href="#">Ver más información </a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <strong class="text-white">Rodrigo Becerra</strong>
                             </div>
                         </div>
                     </article>
@@ -43,25 +30,25 @@
             </div>
             <div class="row">
                 <div id="modulos" class="col">
-                    <a href="#">Inicio</a>
-                    <a href="#">Solicitud nota P</a>
-                    <a href="#">Préstamos biblioteca</a>
-                    <a href="#">Información académica</a>
-                    <a href="#">Notas parciales</a>
-                    <a href="#">Cuenta corriente</a>
-                    <a href="#">Hora asistente social</a>
-                    <a href="#">Documentos</a>
-                    <a href="#">Solicitudes estudiantes</a>
-                    <a href="#">Obs. ficha académica</a>
-                    <a href="#">Certificado académico</a>
-                    <a href="#">Cerrar sesión</a>
+                    <a>Inicio</a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Seleccionar carrera</a> <!-- Trigger modal -->
+                    <a>Solicitud nota P</a>
+                    <a>Préstamos biblioteca</a>
+                    <a>Información académica</a>
+                    <a>Notas parciales</a>
+                    <a>Cuenta corriente</a>
+                    <a>Hora asistente social</a>
+                    <a>Documentos</a>
+                    <a>Solicitudes estudiantes</a>
+                    <a>Obs. ficha académica</a>
+                    <a>Certificado académico</a>
+                    <a>Cerrar sesión</a>
                     <hr style="color: white;">
                 </div>
                 
             </div>
         </div>
     </div>
-        
     <!-- Side navigation -->
 
     <!-- Header-->
@@ -94,13 +81,55 @@
     <section id="main">
         <div class="container-fluid  mt-4">
             <div class="row align-items-center ps-4">
-                <!-- <div class="col-6 offset-6 text-center"> -->
+                <div class="col">
                     <div class="col text-center">
                     <h3 class="titulo-azul">¡Bienvenido al Portal del Estudiante!</h3><br>
-                    
-                    </div>
+                </div>
             </div>
             <h6 class="ms-5"> Bienvenido(a) al Portal  del Estudiante de la Universidad Católica de Temuco.  </h6>
+            <div class="row">
+                <div class="col">
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">Se ha detectado más de una carrera</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Por favor selecciona una carrera para visualizar su contenido en el Portal:</h6>
+                                <ul class="list-group">
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                            154: INGENIERÍA CIVIL EN INFORMÁTICA-PLAN 3-AÑO DE INGRESO 2017
+                                    </label>
+                                    <label class="list-group-item">
+                                        <input class="form-check-input me-1" type="checkbox" value="">
+                                            155: TÉCNICO EN REDES-PLAN 4-AÑO INGRESO 2016 
+                                    </label>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- /Modal -->
+
+                    <!-- <div class="dropdown_toggle mb-3 d-flex">
+                        <a href="#" class="dropdown-toggle p-0 text-white" id="dropdownUser1" data-bs-toggle="dropdown" >
+                            <small class="text-white" >Ing. civil en Informática </small>
+                        </a>
+                        <ul id="carreras" class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="dropdownUser1">
+                            <li><a class="dropdown-item mt-1" href="#">Ing. civil en Informática</a></li>
+                            <li><a class="dropdown-item" href="#">Téc. en Redes</a></li>
+                            <li><hr class="dropdown-divider m-1"></li>
+                            <li><a class="dropdown-item mt-0 mb-1" href="#">Ver más información </a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
         </div>
     </section>
     <!-- /Main-->
