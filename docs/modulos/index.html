@@ -20,7 +20,9 @@
                     <article class="card">
                         <div class="card-body">
                             <div class="d-flex align-items-center">
+                                <a href="#" class="m-0 p-0">
                                 <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
+                                </a>
                                 <strong class="text-white">Rodrigo Becerra</strong>
                             </div>
                         </div>
@@ -30,8 +32,7 @@
             </div>
             <div class="row">
                 <div id="modulos" class="col">
-                    <a>Inicio</a>
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Seleccionar carrera</a> <!-- Trigger modal -->
+                    <a href="../modulos/index.html">Inicio </a>
                     <a>Solicitud nota P</a>
                     <a>Préstamos biblioteca</a>
                     <a>Información académica</a>
@@ -42,7 +43,7 @@
                     <a>Solicitudes estudiantes</a>
                     <a>Obs. ficha académica</a>
                     <a>Certificado académico</a>
-                    <a>Cerrar sesión</a>
+                    <a href="./login.html">Cerrar sesión</a>
                     <hr style="color: white;">
                 </div>
                 
@@ -59,15 +60,15 @@
                     <div class="col-6 col-xl-6 mt-3">
                         <a href="../modulos/index.html"><img id="uctlogo" src="../images/logo-uct.png" alt="UCT logo"></a>
                     </div>
-                    <div class="col-6 col-xl-6 text-end mt-3">
-                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="col-6 col-xl-6 text-end mt-3 pe-3">
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="120000" data-bs-ride="carousel">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="../images/logo-uct.png"  alt="...">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="../images/portal.png"  alt="...">
-                              </div>
+                                <div class="carousel-item">
+                                    <img src="../images/portal.png"  alt="...">
+                                </div>
+                                <div class="carousel-item active">
+                                  <img src="../images/portal.png" alt="...">
+                                </div>
                             
                             </div>
                           </div>
@@ -79,9 +80,14 @@
         </section>
         <section id="subheader">
             <div class="container-fluid sticky-top">
-                <div class="row">
+                <div class="row p-1">
                     <div class="col text-white">
                         =
+                    </div>
+                    <div class="col text-end">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- Trigger modal -->
+                            <small class="text-white">154: INGENIERÍA CIVIL EN INFORMÁTICA</small>
+                        </a> 
                     </div>
                 </div>
             </div>
@@ -128,24 +134,12 @@
                         </div>
                     </div>
                     <!-- /Modal -->
-
-                    <!-- <div class="dropdown_toggle mb-3 d-flex">
-                        <a href="#" class="dropdown-toggle p-0 text-white" id="dropdownUser1" data-bs-toggle="dropdown" >
-                            <small class="text-white" >Ing. civil en Informática </small>
-                        </a>
-                        <ul id="carreras" class="dropdown-menu dropdown-menu-dark p-0" aria-labelledby="dropdownUser1">
-                            <li><a class="dropdown-item mt-1" href="#">Ing. civil en Informática</a></li>
-                            <li><a class="dropdown-item" href="#">Téc. en Redes</a></li>
-                            <li><hr class="dropdown-divider m-1"></li>
-                            <li><a class="dropdown-item mt-0 mb-1" href="#">Ver más información </a></li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
         </div>
     </section>
     <!-- /Main-->
-    </div>
+
 
     <!-- Footer -->
     <!-- <footer id="footer" class="pb-4 pt-4">
