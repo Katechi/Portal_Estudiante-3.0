@@ -14,6 +14,12 @@
     margin-left: 300px;
     height: 130px;
 }
+
+#header .container-fluid{
+  min-height: 100%;
+  min-width: 100%;
+}
+
 /*Agregado*/
 #headerlogin {
   background: #01568E; 
@@ -57,6 +63,35 @@
 /*Agregado*/
 .navbarlink{
   color: white;
+}
+
+.timeline-with-icons {
+  border-left: 1px solid hsl(0, 0%, 90%);
+  position: relative;
+  list-style: none;
+}
+
+.timeline-with-icons .timeline-item {
+  position: relative;
+}
+
+.timeline-with-icons .timeline-item:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+
+.timeline-with-icons .timeline-icon {
+  position: absolute;
+  left: -48px;
+  background-color: hsl(217, 88.2%, 90%);
+  color: hsl(217, 88.8%, 35.1%);
+  border-radius: 50%;
+  height: 31px;
+  width: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* The sidebar menu */
@@ -106,26 +141,12 @@
   margin-left: 300px; /* Same as the width of the sidebar */
 }
 
+@media (max-width:991px) {
+    #header, #subheader, #main{
+      margin-left: 0px;
+    } 
+}
 
-/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-} 
-
-
-/* @media (max-width:575px) {
-    .titulo-azul{
-        font-size: 1rem;
-    }
-
-    #portal {
-        font-size: 100%;
-    }
-
-    #uctlogo {
-        max-width: 130px;
-        max-height: 70px;
-        
-       }
-} */
+@media (max-width:767px){
+  
+}
