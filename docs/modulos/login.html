@@ -29,7 +29,7 @@
         <!--Navbar-->
         <section>
             <div class="container-fluid sticky-top" id="subheaderlogin">
-                <div class="row d-none d-md-block d-lg-block">
+                <div class="row d-none d-lg-block">
                     <div class="col text-white">
                       <ul class="nav justify-content-end">
                         <li class="nav-item">
@@ -48,9 +48,9 @@
                           <a class="nav-link navbarlink" href="#">DGE</a>
                         </li>
                         <li class="nav-item">
-                        <li class="nav-item">
                           <a class="nav-link navbarlink" href="#">ACOMPAÑAMIENTO DAAS</a>
                         </li>
+                        <li class="nav-item">
                           <a class="nav-link navbarlink" href="#">DARA</a>
                         </li>
                         
@@ -65,8 +65,8 @@
     
     <!-- Main-->
    <section id="mainlogin">
-    <div class="container-fluid ">
-    <div class="row">
+    <div class="container-fluid mt-2">
+    <div class="row justify-content-center">
     <!-- Carrusel de noticias-->
         <div class="col-lg-8 col-sm-12 my-2 p-3">
             <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -113,35 +113,45 @@
     <!-- /Carrusel de noticias-->
 
     <!--Formulario Inicio sesion-->
-        <div class="col-lg-4 col-sm-12 mb-3 p-3 align-items-md-start">     
+        <div class="col-lg-4 col-sm-10 mb-3 p-3">     
           <div class="col text-uppercase">
-                <h2 class="fw-bold titulo-azul text-center">INICIAR SESIÓN</h2>
+                <h2 class="fw-bold titulo-azul text-center mb-3">INICIAR SESIÓN</h2>
                 </div>
                 <!--Login-->
                 <form action="#">
-                  <div class="col mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Correo</label>
+<!--                   <div class="col">
+                    <label for="exampleInputEmail1" class="form-label font-weight-bold mb-0">Correo</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" alt="Introduzca correo">
-                    <!--<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
-                  </div>
-                  <div class="col mb-3">
+                  </div> 
+
+                                    <div class="col mt-2">
                     <label for="exampleInputPassword1" class="form-label">Contraseña</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" alt="Introduzca Contraseña">
+                  </div> -->
+
+                  <div class="input-group flex-nowrap mb-3">
+                    <span class="input-group-text" id="addon-wrapping"><img src="../images/usuario.svg" width="30" height="30"></span>
+                    <input type="text" class="form-control" placeholder="example2022@alu.uct.cl" aria-label="Username" aria-describedby="addon-wrapping">
                   </div>
+
+                  <div class="input-group flex-nowrap mb-2">
+                    <span class="input-group-text" id="addon-wrapping"><img src="../images/candado.svg" width="30" height="30"></span>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Introduzca contraseña">
+                  </div>
+
                   <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    <label class="form-check-label" for="exampleCheck1">Recordarme</label>
                   </div>
                   <div class="d-grid">
-                    <a class="btn btn-primary" href="./index.html" role="button">Ingresar</a>
+                    <a class="btn btn-primary" style="background: #01568E;" href="./index.html" role="button">Ingresar</a>
                   </div>
-                  <div class="my-3">
-                    <span class=""><a href="#">Recuperar Contraseña</a></span>
-                    <span><a href="#">Cambiar Contraseña</a></span>
+                  <div class="my-3 mx-3">
+                    <span><a class="text-decoration-none" href="#">Recuperar Contraseña</a></span>
+                    <span class="text-end"><a class="text-decoration-none" href="#">Cambiar Contraseña</a></span>
                   </div>
                 </form>
                 <!--/Login-->
-
                 <a class="navbar-link pt-1" href="#">
                   <img src="../images/facebook.ico" alt="" width="30" height="30"></a>
                   <a class="navbar-link pt-1" href="#">
