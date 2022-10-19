@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Side navigation -->
+    <div class="sidenav d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <article class="card">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <a href="#" class="m-0 p-0">
+                                <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
+                                </a>
+                                <strong class="text-white">Rodrigo Becerra</strong>
+                            </div>
+                        </div>
+                    </article>
+                    <hr class="mb-0" style="color: white;">
+                </div>
+            </div>
+            <div class="row">
+                <div id="modulos" class="col">
+                    <a href="../modulos/index.html">Inicio </a>
+                    <a>Solicitud nota P</a>
+                    <a>Préstamos biblioteca</a>
+                    <a>Información académica</a>
+                    <a>Notas parciales</a>
+                    <a>Cuenta corriente</a>
+                    <a>Hora asistente social</a>
+                    <a>Documentos</a>
+                    <a>Solicitudes estudiantes</a>
+                    <a>Obs. ficha académica</a>
+                    <a>Certificado académico</a>
+                    <a href="./login.html">Cerrar sesión</a>
+                    <hr style="color: white;">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Side navigation -->
+
+    <!-- Header-->
+    <header>
+        <section id="header">
+            <div class="container-fluid d-flex align-items-center pe-0">
+                <div class="me-auto">
+                    <a href="../modulos/index.html"><img id="uctlogo" src="../images/logo-uct.png" alt="UCT logo"></a>
+                </div>
+                <div class="text-end">
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="120000" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <img src="../images/portal.png"  alt="...">
+                            </div>
+                            <div class="carousel-item active">
+                                <img src="../images/portal.png" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="subheader">
+            <div class="container-fluid">
+                <div class="row p-1">
+                    <div class="col-2 text-white">
+                        <button class="navbar-toggler" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col text-end ps-0">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- Trigger modal -->
+                            <small class="text-white">154: INGENIERÍA CIVIL EN INFORMÁTICA</small>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid  mt-4">            
+                <div class="row">
+                    <div class="col">
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="staticBackdropLabel">Se ha detectado más de una carrera</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h6>Por favor selecciona una carrera para visualizar su contenido en el Portal:</h6>
+                                        <ul class="list-group">
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                    154: INGENIERÍA CIVIL EN INFORMÁTICA-PLAN 3-AÑO DE INGRESO 2017
+                                            </label>
+                                            <label class="list-group-item">
+                                                <input class="form-check-input me-1" type="checkbox" value="">
+                                                    155: TÉCNICO EN REDES-PLAN 4-AÑO INGRESO 2016 
+                                            </label>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Modal -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- /Header-->
+    
+    <!-- Main-->
+    <section id="main">
+        
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-3 align-items-center text-center">
+                    <img src="../images/rodrigobecerra.png" alt="" width="100" height="100" class="rounded-circle mt-3 mb-1">
+                    <h5 class="card-title mb-3">Rodrigo Becerra</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Estudiante de</h6>
+                    <h6 class="card-subtitle mb-2 text-muted">Ingeniería civil en Informática</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Main-->
+
+    <script src="../lib/bootstrap/js/popper.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+  
+</html>

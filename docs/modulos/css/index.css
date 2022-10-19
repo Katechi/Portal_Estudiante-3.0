@@ -58,7 +58,7 @@
 }
 .titulo-azul{
     color: #01568E;
-    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    /*text-shadow: 0 4px 4px rgba(0,0,0,0.25);*/
 }
 /*Agregado*/
 .navbarlink{
@@ -93,6 +93,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.thead{
+  background-color: #01568E;
+  color: white;
+}
+
 
 /* The sidebar menu */
 .sidenav {
