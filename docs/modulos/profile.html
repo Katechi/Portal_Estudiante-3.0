@@ -60,16 +60,7 @@
                     <a href="../modulos/index.html"><img id="uctlogo" src="../images/logo-uct.png" alt="UCT logo"></a>
                 </div>
                 <div class="text-end">
-                    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-interval="120000" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item">
-                                <img src="../images/portal.png"  alt="...">
-                            </div>
-                            <div class="carousel-item active">
-                                <img src="../images/portal.png" alt="...">
-                            </div>
-                        </div>
-                    </div>
+                    <img src="../images/portal.png"  alt="Portal del Estudiante">
                 </div>
             </div>
         </section>
@@ -130,12 +121,65 @@
     <section id="main">
         
         <div class="container mt-4">
-            <div class="row">
-                <div class="col-3 align-items-center text-center">
-                    <img src="../images/rodrigobecerra.png" alt="" width="100" height="100" class="rounded-circle mt-3 mb-1">
+            <h3 class="titulo-azul text-center mb-0">Datos personales</h3>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-7 col-md-3 text-center mt-4 rounded">
+                    <img src="../images/rodrigobecerra.png" alt="" width="120" height="120" class="rounded-circle mt-3 mb-1">
                     <h5 class="card-title mb-3">Rodrigo Becerra</h5>
                     <h6 class="card-subtitle mb-2 text-muted">Estudiante de</h6>
                     <h6 class="card-subtitle mb-2 text-muted">Ingeniería civil en Informática</h6>
+                </div>
+                <div class="col-md-9">
+                    <div class="table-responsive mt-4 ps-1 pe-1 rounded-top rounder ">
+                        <table class="table mb-0">
+                            <tbody>
+                                <tr>
+                                    <td><h6 class="card-title">Nombres</h6></td>
+                                    <td>Rodrigo Sebastián</td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="card-title">Apellido paterno</h6></td>
+                                    <td>Becerra</td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="card-title">Apellido materno</h6></td>
+                                    <td>Vera</td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="card-title">RUT</h6></td>
+                                    <td>20.079.726-4</td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="card-title">Fecha de nacimiento</h6></td>
+                                    <td>27-11-1998</td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="card-title">Sexo</h6></td>
+                                    <td>Masculino</td>
+                                </tr>
+                                <tr>
+                                    <td><h6 class="card-title">Email UCTemuco</h6></td>
+                                    <td>rbecerra2017@alu.uct.cl</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-9 offset-md-3 mt-4 mb-5 text-center">
+                    <h5 class="titulo-azul mt-2">Actualizar datos de contacto</h5>
+                    <form class="form-floating mt-3">
+                        <input type="email" class="form-control" id="floatingInputValue01" placeholder="name@example.com" value="rbecerra098@gmail.com">
+                        <label for="floatingInputValue">Email alternativo</label>
+                    </form>
+                    <form class="form-floating mt-1">
+                        <input type="text" class="form-control" id="floatingInputValue02" placeholder="987654321" value="947636244">
+                        <label for="floatingInputValue">Número de celular personal:</label>
+                    </form>
+                    <form class="form-floating mt-1">
+                        <input type="text" class="form-control" id="floatingInputValue03" placeholder="987654321" value="947636244">
+                        <label for="floatingInputValue">Número de celular alternativo:</label>
+                    </form>
+                    <button class="btn btn-primary mt-2" type="submit">Actualizar</button>
                 </div>
             </div>
         </div>

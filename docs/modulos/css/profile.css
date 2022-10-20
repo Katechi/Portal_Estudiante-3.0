@@ -32,11 +32,9 @@
   text-decoration: none;
 }
 
-/*Agregado*/
-#subheaderlogin {
-  background: #038ACE;
-  margin-left: 0px;
-  height: 40px;
+.titulo-azul{
+  color: #01568E;
+  /*text-shadow: 0 4px 4px rgba(0,0,0,0.25);*/
 }
 
 /*Agregado*/
