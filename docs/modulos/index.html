@@ -12,13 +12,15 @@
     <title>Home</title>
 </head>
 <body>
+    <section id="body">
     <!-- Side navigation -->
-    <div class="sidenav d-none d-lg-block">
+    <div id="sidenav" class="sidenav pt-0">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <article class="card">
-                        <div class="card-body">
+                    <a href="javascript:void(0)" class="closebtn d-lg-none p-0 text-center" onclick="closeNav()">&times;</a>
+                    <article class="card border-0">
+                        <div class="card-body pt-0">
                             <div class="d-flex align-items-center">
                                 <a href="./profile.html" class="m-0 p-0">
                                 <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
@@ -46,7 +48,6 @@
                     <a href="./login.html">Cerrar sesión</a>
                     <hr style="color: white;">
                 </div>
-                
             </div>
         </div>
     </div>
@@ -67,13 +68,11 @@
 
         <section id="subheader">
             <div class="container-fluid">
-                <div class="row p-1">
-                    <div class="col-2 text-white">
-                        <button class="navbar-toggler" type="button">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                <div class="row p-0 ps-2">
+                    <div class="col-2 text-white d-lg-none">
+                       <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; </span>
                     </div>
-                    <div class="col text-end ps-0">
+                    <div class="col text-end ps-0 mt-1">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- Trigger modal -->
                             <small class="text-white">154: INGENIERÍA CIVIL EN INFORMÁTICA</small>
                         </a> 
@@ -85,27 +84,27 @@
                     <!-- Modal -->
                     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="staticBackdropLabel">Se ha detectado más de una carrera</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <h6>Por favor selecciona una carrera para visualizar su contenido en el Portal:</h6>
-                                <ul class="list-group">
-                                    <label class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                            154: INGENIERÍA CIVIL EN INFORMÁTICA-PLAN 3-AÑO DE INGRESO 2017
-                                    </label>
-                                    <label class="list-group-item">
-                                        <input class="form-check-input me-1" type="checkbox" value="">
-                                            155: TÉCNICO EN REDES-PLAN 4-AÑO INGRESO 2016 
-                                    </label>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Se ha detectado más de una carrera</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Por favor selecciona una carrera para visualizar su contenido en el Portal:</h6>
+                                    <ul class="list-group">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                                154: INGENIERÍA CIVIL EN INFORMÁTICA-PLAN 3-AÑO DE INGRESO 2017
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                                155: TÉCNICO EN REDES-PLAN 4-AÑO INGRESO 2016 
+                                        </label>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                     <!-- /Modal -->
@@ -275,7 +274,8 @@
 
     <script src="../lib/bootstrap/js/popper.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-
+    <script src="../modulos/js/index.js"></script>
+</section>
 </body>
   
 </html>
