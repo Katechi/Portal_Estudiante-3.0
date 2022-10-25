@@ -1,10 +1,4 @@
-<!doctype html>
-<html lang="es">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
 
@@ -12,111 +6,6 @@
     <title>Home</title>
 </head>
 <body>
-    <!-- Side navigation -->
-    <div class="sidenav d-none d-lg-block">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <article class="card">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center">
-                                <a href="#" class="m-0 p-0">
-                                <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
-                                </a>
-                                <strong class="text-white">Rodrigo Becerra</strong>
-                            </div>
-                        </div>
-                    </article>
-                    <hr class="mb-0" style="color: white;">
-                </div>
-            </div>
-            <div class="row">
-                <div id="modulos" class="col">
-                    <a href="../modulos/index.html">Inicio </a>
-                    <a>Solicitud nota P</a>
-                    <a>Préstamos biblioteca</a>
-                    <a>Información académica</a>
-                    <a>Notas parciales</a>
-                    <a>Cuenta corriente</a>
-                    <a>Hora asistente social</a>
-                    <a>Documentos</a>
-                    <a>Solicitudes estudiantes</a>
-                    <a>Obs. ficha académica</a>
-                    <a>Certificado académico</a>
-                    <a href="./login.html">Cerrar sesión</a>
-                    <hr style="color: white;">
-                </div>
-                
-            </div>
-        </div>
-    </div>
-    <!-- Side navigation -->
-
-    <!-- Header-->
-    <header>
-        <section id="header">
-            <div class="container-fluid d-flex align-items-center pe-0">
-                <div class="me-auto">
-                    <a href="../modulos/index.html"><img id="uctlogo" src="../images/logo-uct.png" alt="UCT logo"></a>
-                </div>
-                <div class="text-end">
-                    <img src="../images/portal.png"  alt="Portal del Estudiante">
-                </div>
-            </div>
-        </section>
-
-        <section id="subheader">
-            <div class="container-fluid">
-                <div class="row p-1">
-                    <div class="col-2 text-white">
-                        <button class="navbar-toggler" type="button">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="col text-end ps-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- Trigger modal -->
-                            <small class="text-white">154: INGENIERÍA CIVIL EN INFORMÁTICA</small>
-                        </a> 
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid  mt-4">            
-                <div class="row">
-                    <div class="col">
-                        <!-- Modal -->
-                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                    <h5 class="modal-title" id="staticBackdropLabel">Se ha detectado más de una carrera</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h6>Por favor selecciona una carrera para visualizar su contenido en el Portal:</h6>
-                                        <ul class="list-group">
-                                            <label class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="">
-                                                    154: INGENIERÍA CIVIL EN INFORMÁTICA-PLAN 3-AÑO DE INGRESO 2017
-                                            </label>
-                                            <label class="list-group-item">
-                                                <input class="form-check-input me-1" type="checkbox" value="">
-                                                    155: TÉCNICO EN REDES-PLAN 4-AÑO INGRESO 2016 
-                                            </label>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Modal -->
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <!-- /Header-->
-    
     <!-- Main-->
     <section id="main">
         
@@ -131,7 +20,7 @@
                                     Historia académica
                                 </button>
                             </h2>
-                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body">
                                     <h5 class="text-center mt-2">Información del estudiante</h5>
                                     <div class="table-responsive ps-1 pe-1">
@@ -154,7 +43,7 @@
                                     </div>
                                     <h5 class="text-center mt-4">Información de la carrera</h5>
                                     <div class="table-responsive ps-1 pe-1">
-                                        <table class="table mb-0">
+                                        <table class="table mb-4">
                                             <tbody>
                                                 <tr>
                                                     <td><h6 class="card-title">Código</h6></td>
@@ -182,35 +71,36 @@
                                                 </tr>
                                             </tbody>
                                         </table>
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link active" id="pills-listado-tab" data-bs-toggle="pill" data-bs-target="#pills-listado" type="button" role="tab" aria-controls="pills-listado" aria-selected="true">Listado de cursos</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="pills-competencias-tab" data-bs-toggle="pill" data-bs-target="#pills-competencias" type="button" role="tab" aria-controls="pills-competencias" aria-selected="false">Competencias</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="pills-creditos-tab" data-bs-toggle="pill" data-bs-target="#pills-creditos" type="button" role="tab" aria-controls="pills-creditos" aria-selected="false">Créditos libre disposición</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="pills-prueba-tab" data-bs-toggle="pill" data-bs-target="#pills-prueba" type="button" role="tab" aria-controls="pills-prueba" aria-selected="false">Prueba de produccion de texto</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="pills-avance-tab" data-bs-toggle="pill" data-bs-target="#pills-avance" type="button" role="tab" aria-controls="pills-avance" aria-selected="false">Avance curricular</a>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                              <a class="nav-link" id="pills-pdf-tab" data-bs-toggle="pill" data-bs-target="#pills-pdf" type="button" role="tab" aria-controls="pills-pdf" aria-selected="false">PDF</a>
+                                            </li>
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-listado" role="tabpanel" aria-labelledby="pills-listado-tab">Listado de cursos</div>
+                                            <div class="tab-pane fade" id="pills-competencias" role="tabpanel" aria-labelledby="pills-competencias-tab">Competencias</div>
+                                            <div class="tab-pane fade" id="pills-creditos" role="tabpanel" aria-labelledby="pills-creditos-tab">Creditos</div>
+                                            <div class="tab-pane fade" id="pills-prueba" role="tabpanel" aria-labelledby="pills-prueba-tab">Prueba</div>
+                                            <div class="tab-pane fade" id="pills-avance" role="tabpanel" aria-labelledby="pills-avance-tab">Avance</div>
+                                            <div class="tab-pane fade" id="pills-pdf" role="tabpanel" aria-labelledby="pills-pdf-tab">PDF</div>
+                                        </div>
                                     </div>
-                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link active" id="pills-listado-tab" data-bs-toggle="pill" data-bs-target="#pills-listado" type="button" role="tab" aria-controls="pills-listado" aria-selected="true">Listado de cursos</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-competencias-tab" data-bs-toggle="pill" data-bs-target="#pills-competencias" type="button" role="tab" aria-controls="pills-competencias" aria-selected="false">Competencias</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-creditos-tab" data-bs-toggle="pill" data-bs-target="#pills-creditos" type="button" role="tab" aria-controls="pills-creditos" aria-selected="false">Créditos libre disposición</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-prueba-tab" data-bs-toggle="pill" data-bs-target="#pills-prueba" type="button" role="tab" aria-controls="pills-prueba" aria-selected="false">Prueba de produccion de texto</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-avance-tab" data-bs-toggle="pill" data-bs-target="#pills-avance" type="button" role="tab" aria-controls="pills-avance" aria-selected="false">Avance curricular</button>
-                                        </li>
-                                        <li class="nav-item" role="presentation">
-                                          <button class="nav-link" id="pills-pdf-tab" data-bs-toggle="pill" data-bs-target="#pills-pdf" type="button" role="tab" aria-controls="pills-pdf" aria-selected="false">PDF</button>
-                                        </li>
-                                    </ul>
-                                    <div class="tab-content" id="pills-tabContent">
-                                        <div class="tab-pane fade show active" id="pills-listado" role="tabpanel" aria-labelledby="pills-listado-tab">Listado de cursos</div>
-                                        <div class="tab-pane fade" id="pills-competencias" role="tabpanel" aria-labelledby="pills-competencias-tab">Competencias</div>
-                                        <div class="tab-pane fade" id="pills-creditos" role="tabpanel" aria-labelledby="pills-creditos-tab">Creditos</div>
-                                        <div class="tab-pane fade" id="pills-prueba" role="tabpanel" aria-labelledby="pills-prueba-tab">Prueba</div>
-                                        <div class="tab-pane fade" id="pills-avance" role="tabpanel" aria-labelledby="pills-avance-tab">Avance</div>
-                                        <div class="tab-pane fade" id="pills-pdf" role="tabpanel" aria-labelledby="pills-pdf-tab">PDF</div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             

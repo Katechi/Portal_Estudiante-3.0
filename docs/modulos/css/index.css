@@ -6,7 +6,6 @@
   background-color: #161B1E; 
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 18px;
-  transition: 0.4s;
   z-index: 999;
 }
 
@@ -53,7 +52,7 @@
 }
 
 #main{
-  transition: 0.4s;
+  margin-left: 300px;
 }
 
 #header {
@@ -61,7 +60,6 @@
     color: white;
     margin-left: 300px;
     height: 130px;
-    transition: 0.4s;
 }
 
 #header .container-fluid{
@@ -93,7 +91,6 @@
   background: #038ACE;
   margin-left: 300px;
   height: 40px;
-  transition: 0.4s;
 }
 
 #subheader a{
@@ -149,11 +146,6 @@
   color: white;
 }
 
-/* Style page content */
-#main {
-  margin-left: 300px; /* Same as the width of the sidebar */
-}
-
 #footer {
   background-color: #363839;
   color: white;
@@ -162,7 +154,6 @@
 @media (max-width:992px) {
     #header, #subheader, #main{
       margin-left: 0px;
-      transition: 0.4s;
       
     } 
     #sidenav{

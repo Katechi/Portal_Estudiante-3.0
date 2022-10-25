@@ -22,8 +22,8 @@
                     <article class="card border-0">
                         <div class="card-body pt-0">
                             <div class="d-flex align-items-center">
-                                <a href="./profile.html" class="m-0 p-0">
-                                <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
+                                <a onclick="ajax('./profile.html')" class="m-0 p-0" type="button">
+                                    <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
                                 </a>
                                 <strong class="text-white">Rodrigo Becerra</strong>
                             </div>
@@ -35,16 +35,16 @@
             <div class="row">
                 <div id="modulos" class="col">
                     <a href="../modulos/index.html">Inicio </a>
-                    <a>Solicitud nota P</a>
-                    <a>Préstamos biblioteca</a>
-                    <a href="../modulos/informacion_academica.html">Información académica</a>
-                    <a>Notas parciales</a>
-                    <a>Cuenta corriente</a>
-                    <a>Hora asistente social</a>
-                    <a>Documentos</a>
-                    <a>Solicitudes estudiantes</a>
-                    <a>Obs. ficha académica</a>
-                    <a>Certificado académico</a>
+                    <a id="solicitud" type="button">Solicitud nota P</a>
+                    <a id="prestamos" type="button">Préstamos biblioteca</a>
+                    <a id="informacion" type="button" onclick="ajax('../modulos/informacion_academica.html')">Información académica</a>
+                    <a id="notas" type="button">Notas parciales</a>
+                    <a id="cuenta" type="button">Cuenta corriente</a>
+                    <a id="hora" type="button">Hora asistente social</a>
+                    <a id="documentos" type="button">Documentos</a>
+                    <a id="solicitudes" type="button">Solicitudes estudiantes</a>
+                    <a id="ficha" type="button">Obs. ficha académica</a>
+                    <a id="certificado" type="button">Certificado académico</a>
                     <a href="./login.html">Cerrar sesión</a>
                     <hr style="color: white;">
                 </div>
@@ -256,26 +256,23 @@
     </section>
     <!-- /Main-->
 
-
-    <!-- Footer -->
-    <!-- <footer id="footer" class="pb-4 pt-4">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <p>DIRECCIONES CAMPUS</p>
-                </div>
-                <div class="col">
-                    <p>TELEFONOS DE UTILIDAD</p>
-                </div>
-            </div>
-        </div>
-    </footer> -->
-    <!-- /Footer -->
-
     <script src="../lib/bootstrap/js/popper.min.js"></script>
     <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="../modulos/js/index.js"></script>
+    <script>
+        function ajax(ruta){
+            const http = new XMLHttpRequest();
+
+            http.onreadystatechange = function(){
+                if (this.readyState == 4 && this.status==200){
+                    document.getElementById("main").innerHTML = this.responseText;
+                }
+            }
+
+            http.open("GET", ruta);
+            http.send();
+        }
+    </script>
 </section>
 </body>
-  
 </html>
