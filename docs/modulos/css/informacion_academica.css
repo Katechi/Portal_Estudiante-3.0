@@ -1,0 +1,110 @@
+#header {
+    background: #01568E; 
+    color: white;
+    margin-left: 300px;
+    height: 130px;
+}
+
+#header .container-fluid{
+  min-height: 100%;
+  min-width: 100%;
+}
+
+#header img{
+  max-width: 80%;
+}
+
+#portal {
+  font-family: VistaSans;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 1);
+  font-size: 1.359rem;
+  margin-top: 10px;
+  /* text-shadow: 3px 4px 4px rgba(0, 0, 0, 1); */
+}
+
+#subheader {
+  background: #038ACE;
+  margin-left: 300px;
+  height: 40px;
+}
+
+#subheader a{
+  text-decoration: none;
+}
+
+.titulo-azul{
+  color: #01568E;
+  /*text-shadow: 0 4px 4px rgba(0,0,0,0.25);*/
+}
+
+/*Agregado*/
+.navbarlink{
+  color: white;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  background-color: #161B1E; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 18px;
+}
+/* 011e31 */
+.sidenav .card {
+    background-color: #161B1E;
+}
+
+#carreras a{
+  font-size: .9rem;
+  padding-left: 12px;
+  
+}
+ 
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: .9rem;
+  display: block;
+}
+
+#modulos a{
+  color: #cfcfcf;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+/* When you mouse over the navigation links, change their color */
+#modulos a:hover {
+  color: #f1f1f1;
+}
+
+#main {
+    margin-left: 300px; /* Mismo ancho que el sidebar */
+}
+
+#accordionPanelsStayOpen .accordion-item button{
+    background-color:#038ACE;
+    color: white;
+}
+
+
+
+/* #card div h6{
+    color:rgb(255, 255, 255, 0.7);
+} */
+
+@media (max-width:991px) {
+    #header, #subheader, #main{
+      margin-left: 0px;
+    } 
+}
+
+@media (max-width:767px){
+  
+}

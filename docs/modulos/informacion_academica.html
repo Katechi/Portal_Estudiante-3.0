@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/informacion_academica.css">
     <title>Home</title>
 </head>
 <body>
@@ -121,65 +121,83 @@
     <section id="main">
         
         <div class="container mt-4">
-            <h3 class="titulo-azul text-center mb-0">Datos personales</h3>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-7 col-md-3 text-center mt-4 rounded">
-                    <img src="../images/rodrigobecerra.png" alt="" width="120" height="120" class="rounded-circle mt-3 mb-1">
-                    <h5 class="card-title mb-3">Rodrigo Becerra</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Estudiante de</h6>
-                    <h6 class="card-subtitle mb-2 text-muted">Ingeniería civil en Informática</h6>
-                </div>
-                <div class="col-md-9">
-                    <div class="table-responsive mt-4 ps-1 pe-1">
-                        <table class="table mb-0">
-                            <tbody>
-                                <tr>
-                                    <td><h6 class="card-title">Nombres</h6></td>
-                                    <td>Rodrigo Sebastián</td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="card-title">Apellido paterno</h6></td>
-                                    <td>Becerra</td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="card-title">Apellido materno</h6></td>
-                                    <td>Vera</td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="card-title">RUT</h6></td>
-                                    <td>20.079.726-4</td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="card-title">Fecha de nacimiento</h6></td>
-                                    <td>27-11-1998</td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="card-title">Sexo</h6></td>
-                                    <td>Masculino</td>
-                                </tr>
-                                <tr>
-                                    <td><h6 class="card-title">Email UCTemuco</h6></td>
-                                    <td>rbecerra2017@alu.uct.cl</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                <div class="col-md-9 offset-md-3 mt-4 mb-5 text-center">
-                    <h5 class="titulo-azul mt-2">Actualizar datos de contacto</h5>
-                    <form class="form-floating mt-3">
-                        <input type="email" class="form-control" id="floatingInputValue01" placeholder="name@example.com" value="rbecerra098@gmail.com">
-                        <label for="floatingInputValue">Email alternativo</label>
-                    </form>
-                    <form class="form-floating mt-1">
-                        <input type="text" class="form-control" id="floatingInputValue02" placeholder="987654321" value="947636244">
-                        <label for="floatingInputValue">Número de celular personal:</label>
-                    </form>
-                    <form class="form-floating mt-1">
-                        <input type="text" class="form-control" id="floatingInputValue03" placeholder="987654321" value="947636244">
-                        <label for="floatingInputValue">Número de celular alternativo:</label>
-                    </form>
-                    <button class="btn btn-primary mt-2" type="submit">Actualizar</button>
+            <h3 class="titulo-azul text-center mb-0">Información Académica</h3>
+            <div class="row justify-content-center mt-4">
+                <div class="col-11 col-lg-9">
+                    <div class="accordion" id="accordionPanelsStayOpen">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                              Historia académica
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body ">
+                                <h5 class="text-center mt-2">Información del estudiante</h5>
+                                <div class="table-responsive ps-1 pe-1">
+                                    <table class="table mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td><h6 class="card-title">RUT</h6></td>
+                                                <td>20.079.726-4</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Nombres</h6></td>
+                                                <td>Rodrigo Sebastián</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Apellidos</h6></td>
+                                                <td>Becerra Vera</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h5 class="text-center mt-4">Información de la carrera</h5>
+                                <div class="table-responsive ps-1 pe-1">
+                                    <table class="table mb-0">
+                                        <tbody>
+                                            <tr>
+                                                <td><h6 class="card-title">Código</h6></td>
+                                                <td>154</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Carrera</h6></td>
+                                                <td>Ingeniería civil en Informática</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Plan</h6></td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Ingreso</h6></td>
+                                                <td>2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Registro</h6></td>
+                                                <td>2017123456</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Estado</h6></td>
+                                                <td>Regular</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                              Cursos inscritos
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
         </div>
