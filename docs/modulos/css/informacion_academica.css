@@ -93,6 +93,13 @@
     color: white;
 }
 
+.accordion-item table{
+  table-layout: fixed;
+}
+
+.accordion-button::after{
+  filter: brightness(0%) invert(100%);
+}
 
 
 /* #card div h6{

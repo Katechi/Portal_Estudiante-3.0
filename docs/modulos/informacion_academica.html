@@ -123,69 +123,99 @@
         <div class="container mt-4">
             <h3 class="titulo-azul text-center mb-0">Información Académica</h3>
             <div class="row justify-content-center mt-4">
-                <div class="col-11 col-lg-9">
+                <div class="col-11 col-lg-9 mb-4">
                     <div class="accordion" id="accordionPanelsStayOpen">
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
-                              Historia académica
-                            </button>
-                          </h2>
-                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                            <div class="accordion-body ">
-                                <h5 class="text-center mt-2">Información del estudiante</h5>
-                                <div class="table-responsive ps-1 pe-1">
-                                    <table class="table mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <td><h6 class="card-title">RUT</h6></td>
-                                                <td>20.079.726-4</td>
-                                            </tr>
-                                            <tr>
-                                                <td><h6 class="card-title">Nombres</h6></td>
-                                                <td>Rodrigo Sebastián</td>
-                                            </tr>
-                                            <tr>
-                                                <td><h6 class="card-title">Apellidos</h6></td>
-                                                <td>Becerra Vera</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <h5 class="text-center mt-4">Información de la carrera</h5>
-                                <div class="table-responsive ps-1 pe-1">
-                                    <table class="table mb-0">
-                                        <tbody>
-                                            <tr>
-                                                <td><h6 class="card-title">Código</h6></td>
-                                                <td>154</td>
-                                            </tr>
-                                            <tr>
-                                                <td><h6 class="card-title">Carrera</h6></td>
-                                                <td>Ingeniería civil en Informática</td>
-                                            </tr>
-                                            <tr>
-                                                <td><h6 class="card-title">Plan</h6></td>
-                                                <td>3</td>
-                                            </tr>
-                                            <tr>
-                                                <td><h6 class="card-title">Ingreso</h6></td>
-                                                <td>2017</td>
-                                            </tr>
-                                            <tr>
-                                                <td><h6 class="card-title">Registro</h6></td>
-                                                <td>2017123456</td>
-                                            </tr>
-                                            <tr>
-                                                <td><h6 class="card-title">Estado</h6></td>
-                                                <td>Regular</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                        <div class="accordion-item shadow">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false" aria-controls="panelsStayOpen-collapseOne">
+                                    Historia académica
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <h5 class="text-center mt-2">Información del estudiante</h5>
+                                    <div class="table-responsive ps-1 pe-1">
+                                        <table class="table mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td><h6 class="card-title">RUT</h6></td>
+                                                    <td>20.079.726-4</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h6 class="card-title">Nombres</h6></td>
+                                                    <td>Rodrigo Sebastián</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h6 class="card-title">Apellidos</h6></td>
+                                                    <td>Becerra Vera</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <h5 class="text-center mt-4">Información de la carrera</h5>
+                                    <div class="table-responsive ps-1 pe-1">
+                                        <table class="table mb-0">
+                                            <tbody>
+                                                <tr>
+                                                    <td><h6 class="card-title">Código</h6></td>
+                                                    <td>154</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h6 class="card-title">Carrera</h6></td>
+                                                    <td>Ingeniería civil en Informática</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h6 class="card-title">Plan</h6></td>
+                                                    <td>3</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h6 class="card-title">Ingreso</h6></td>
+                                                    <td>2017</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h6 class="card-title">Registro</h6></td>
+                                                    <td>2017123456</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><h6 class="card-title">Estado</h6></td>
+                                                    <td>Regular</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link active" id="pills-listado-tab" data-bs-toggle="pill" data-bs-target="#pills-listado" type="button" role="tab" aria-controls="pills-listado" aria-selected="true">Listado de cursos</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-competencias-tab" data-bs-toggle="pill" data-bs-target="#pills-competencias" type="button" role="tab" aria-controls="pills-competencias" aria-selected="false">Competencias</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-creditos-tab" data-bs-toggle="pill" data-bs-target="#pills-creditos" type="button" role="tab" aria-controls="pills-creditos" aria-selected="false">Créditos libre disposición</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-prueba-tab" data-bs-toggle="pill" data-bs-target="#pills-prueba" type="button" role="tab" aria-controls="pills-prueba" aria-selected="false">Prueba de produccion de texto</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-avance-tab" data-bs-toggle="pill" data-bs-target="#pills-avance" type="button" role="tab" aria-controls="pills-avance" aria-selected="false">Avance curricular</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                          <button class="nav-link" id="pills-pdf-tab" data-bs-toggle="pill" data-bs-target="#pills-pdf" type="button" role="tab" aria-controls="pills-pdf" aria-selected="false">PDF</button>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+                                        <div class="tab-pane fade show active" id="pills-listado" role="tabpanel" aria-labelledby="pills-listado-tab">Listado de cursos</div>
+                                        <div class="tab-pane fade" id="pills-competencias" role="tabpanel" aria-labelledby="pills-competencias-tab">Competencias</div>
+                                        <div class="tab-pane fade" id="pills-creditos" role="tabpanel" aria-labelledby="pills-creditos-tab">Creditos</div>
+                                        <div class="tab-pane fade" id="pills-prueba" role="tabpanel" aria-labelledby="pills-prueba-tab">Prueba</div>
+                                        <div class="tab-pane fade" id="pills-avance" role="tabpanel" aria-labelledby="pills-avance-tab">Avance</div>
+                                        <div class="tab-pane fade" id="pills-pdf" role="tabpanel" aria-labelledby="pills-pdf-tab">PDF</div>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
+                            
                         </div>
+                        
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
@@ -197,7 +227,7 @@
                             </div>
                           </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
