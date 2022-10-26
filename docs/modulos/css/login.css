@@ -43,6 +43,9 @@ html {
     margin-top: auto;
     color: white;
 }
+#footer img{
+  max-width: 80%;
+}
 @media (max-width:991px) {
     #header, #subheader, #main{
       margin-left: 0px;
