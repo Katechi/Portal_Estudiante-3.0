@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/index2.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+        </nav>
+        <!-- /Sidebar -->
+
+        <!-- Content -->
+        <div class="content">
+        </div>
+        <!-- /Content -->
+    </div>
+    <!-- /Wrapper -->
+
+    <!-- Side navigation -->
+    <div id="sidenav" class="sidenav pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="javascript:void(0)" class="closebtn d-lg-none p-0 text-center" onclick="closeNav()">&times;</a>
+                    <article class="card border-0">
+                        <div class="card-body pt-0">
+                            <div class="d-flex align-items-center">
+                                <a onclick="modulos('./profile.html')" class="m-0 p-0" type="button">
+                                    <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
+                                </a>
+                                <strong class="text-white">Rodrigo Becerra</strong>
+                            </div>
+                        </div>
+                    </article>
+                    <hr class="mb-0" style="color: white;">
+                </div>
+            </div>
+            <div class="row">
+                <div id="modulos" class="col">
+                    <a href="../modulos/index.html">Inicio </a>
+                    <a id="solicitud" type="button">Solicitud nota P</a>
+                    <a id="prestamos" type="button">Préstamos biblioteca</a>
+                    <a id="informacion" type="button" onclick="modulos('../modulos/informacion_academica.html')">Información académica</a>
+                    <a id="notas" type="button">Notas parciales</a>
+                    <a id="cuenta" type="button">Cuenta corriente</a>
+                    <a id="hora" type="button">Hora asistente social</a>
+                    <a id="documentos" type="button">Documentos</a>
+                    <a id="solicitudes" type="button">Solicitudes estudiantes</a>
+                    <a id="ficha" type="button">Obs. ficha académica</a>
+                    <a id="certificado" type="button">Certificado académico</a>
+                    <a href="./login.html">Cerrar sesión</a>
+                    <hr style="color: white;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="body">
+    <!-- Side navigation -->
+
+    <!-- Header-->
+    <header>
+        <section id="header">
+            <div class="container-fluid d-flex align-items-center pe-0">
+                <div class="me-auto">
+                    <a href="../modulos/index.html"><img id="uctlogo" src="../images/logo-uct.png" alt="UCT logo"></a>
+                </div>
+                <div class="text-end">
+                    <img src="../images/portal.png"  alt="Portal del Estudiante">
+                </div>
+            </div>
+        </section>
+
+        <section id="subheader">
+            <div class="container-fluid">
+                <div class="row p-0 ps-2">
+                    <div class="col-2 text-white d-lg-none">
+                       <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; </span>
+                    </div>
+                    <div class="col text-end ps-0 mt-1">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- Trigger modal -->
+                            <small class="text-white">154: INGENIERÍA CIVIL EN INFORMÁTICA</small>
+                        </a> 
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Se ha detectado más de una carrera</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h6>Por favor selecciona una carrera para visualizar su contenido en el Portal:</h6>
+                                    <ul class="list-group">
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                                154: INGENIERÍA CIVIL EN INFORMÁTICA-PLAN 3-AÑO DE INGRESO 2017
+                                        </label>
+                                        <label class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="">
+                                                155: TÉCNICO EN REDES-PLAN 4-AÑO INGRESO 2016 
+                                        </label>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Modal -->
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- /Header-->
+    
+    <!-- Main-->
+    <section id="main">
+        <div class="container-fluid  mt-4">            
+            
+            <div class="row align-items-center ps-2">
+                <div class="col">
+                    <div class="col text-center">
+                        <h3 class="titulo-azul">¡Bienvenido al Portal del Estudiante!</h3><br>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- Section: Timeline -->
+                    <section class="pt-2">
+                        <div class="container">
+                            <div class="row">
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <ul class="timeline-with-icons">
+                                            <li class="timeline-item mb-4">
+                                                <div class="accordion-item">
+                                                    <div class="accordion-header" id="headingOne">
+                                                        <button class="accordion-button collapsed pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                            <span class="timeline-icon"></span>
+                                                            <div class="heading d-flex aling-item-center">
+                                                                <h5 class="fw-bold">
+                                                                    <span>Inscripción de cursos</span>
+                                                                    <br>
+                                                                    <span class="text-muted fw-bold"><h6>30 Septiembre 2022</h6></span>
+                                                                </h5>
+                                                            </div>
+                                                            
+                                                        </button>
+                                                    </div>
+                                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted">
+                                                                Informamos que el período de eliminación de cursos de la carga académica correspondiente al segundo semestre de 2022, se encuentra programado a partir de las 9:00 horas entre el 6 y 7 de octubre a través del Portal del Estudiante.
+                                                            </p>
+                                                            <p class="text-muted"> Se permitirá eliminar un curso de la carga académica, siempre y cuando mantengan al menos una actividad inscrita.
+                                                                    Estarás habilitado para realizar este proceso si es que:
+                                                                <ul class="text-muted">
+                                                                    <li>Haber entregado el convenio de prestación de servicios.</li>
+                                                                    <li>Estar al día en los pagos de arancel hasta la cuota 7 de vencimiento 05-09-2022 y matrícula 2022.</li>
+                                                                    <li>No tener deuda de años anteriores sin repactar (incluye crédito complementario).</li>
+                                                                    <li>No tener documentos protestados ni pendientes de pago.</li>
+                                                                    <li>No tener pagaré pendientes de entrega Crédito Fondo Solidario y Créditos Internos, recuerda que debe ser firmado ante notario.</li>
+                                                                </ul>
+                                                            </p>
+                                                            <p class="text-muted">
+                                                                    No se podrán eliminar actividades finales de la carrera como por ejemplo: Trabajo de Titulación, Proyecto de Titulación, Práctica Profesionales, otros similares.
+                                                                
+                                                                    Este proceso sólo permite eliminar 1 curso de la carga académica actual, NO inscribir ni cambiarse de sección/grupo.
+                                                                No olvides que:
+                                                                
+                                                                La eliminación de cursos es una situación excepcional que deben evaluar con mucho cuidado para que no implique extender la duración de la carrera. Por tanto, revisa bien a fin de que, en la fecha que corresponde, estés muy seguro/a del o los cursos que esperas eliminar. 
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="timeline-item mb-5">
+                                                <div class="accordion-item">
+                                                    <div class="accordion-header" id="headingTwo">
+                                                        <button class="accordion-button collapsed pb-2" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                            <span class="timeline-icon"></span>
+                                                            <div class="heading d-flex aling-item-center">
+                                                                <h5 class="fw-bold">
+                                                                    <span>Eliminación de cursos</span>
+                                                                    <br>
+                                                                    <span class="text-muted fw-bold"><h6>6 Octubre 2022</h6></span>
+                                                                </h5>
+                                                            </div>
+                                                            
+                                                        </button>
+                                                    </div>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                                        <div class="accordion-body">
+                                                            <p class="text-muted">
+                                                                Informamos que el período de eliminación de cursos de la carga académica correspondiente al segundo semestre de 2022, se encuentra programado a partir de las 9,00 horas entre el 6 y 7 de octubre a través del Portal del Estudiante.
+                                                                Para este proceso se requiere cumplir con los siguientes criterios:
+                                                            </p>
+                                                            <ul class="text-muted">
+                                                                <li>No tener material pendiente de entrega en biblioteca, en caso contrario puedes tomar contacto al correo biblioteca@uct.cl.</li>
+                                                                <li> Estar al día en los pagos de arancel hasta la cuota 7 de vencimiento 05-09-2022 y matrícula.</li>
+                                                                <li>No tener deuda de años anteriores sin repactar (incluye crédito complementario).</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Section: Timeline -->
+                </div>
+            </div>
+            <div class="row mt-3 mb-5 justify-content-center">
+                <div class="col-11 col-md-10">
+                    <h6>Tus clases de hoy, Miércoles 19 de Octubre:</h6>
+                    <div class="table-responsive rounded-top shadow ">
+                        <table class="table text-center mb-0">
+                            <thead class="thead">
+                                <tr>
+                                    <th scope="col">Curso</th>
+                                    <th scope="col">Sección</th>
+                                    <th scope="col">Hora</th>
+                                    <th scope="col">Sala</th>
+                                    <th scope="col">Edificio</th>
+                                    <th scope="col">Campus</th>
+                                    <th scope="col">Docente</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Física eléctrica</td>
+                                    <td>2</td>
+                                    <td>10:20-11:20</td>
+                                    <td>EDU-101</td>
+                                    <td>Edificio Educación</td>
+                                    <td>Campus Norte</td>
+                                    <td>Richard Vidal</td>
+                                </tr>
+                                <tr>
+                                    <td>Álgebra para la computación</td>
+                                    <td>1</td>
+                                    <td>11:30-12:15</td>
+                                    <td>EDU-102</td>
+                                    <td>Edificio Educación</td>
+                                    <td>Campus Norte</td>
+                                    <td>Juan Pérez</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Main-->
+
+    <script src="../lib/bootstrap/js/popper.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../modulos/js/index.js"></script>
+    <script>
+        function modulos(ruta){
+            const http = new XMLHttpRequest();
+
+            http.onreadystatechange = function(){
+                if (this.readyState == 4 && this.status==200){
+                    document.getElementById("main").innerHTML = this.responseText;
+                }
+            }
+
+            http.open("GET", ruta);
+            http.send();
+        }
+    </script>
+</section>
+</body>
+</html>

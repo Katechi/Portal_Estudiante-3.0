@@ -2,7 +2,7 @@
   transition: 0s;
 }
 
-#accordionPanelsStayOpen .accordion-item button{
+#accordion-panel .accordion-item button{
     background-color:#038ACE;
     color: white;
 }
@@ -13,6 +13,19 @@
 
 .accordion-button::after{
   filter: brightness(0%) invert(100%);
+}
+
+/* #dropdown-button{
+  background-color: #01568E; 
+  border: none;
+} */
+
+.nav-pills .nav-link.active{
+  background-color: #01568E;
+}
+
+.nav-pills .nav-link{
+  color: #038ACE;
 }
 
 @media (min-width:992px) {
