@@ -1,13 +1,13 @@
-#main{
-  transition: 0s;
+#accordion .card{
+  border-top: 0px;
 }
 
-#accordion-panel .accordion-item button{
+#accordion .card button{
     background-color:#038ACE;
     color: white;
 }
 
-.accordion-item table{
+#panel-collapseOne #table{
   table-layout: fixed;
 }
 
@@ -26,6 +26,24 @@
 
 .nav-pills .nav-link{
   color: #038ACE;
+}
+
+#select-filtro{
+  font-size: 0.9rem; 
+  width:75px;
+}
+
+#select-estado{
+  font-size: 0.9rem; 
+  width:180px;
+}
+
+#page-navegation li a.page-link.active {
+  color: #038ACE;
+}
+
+#page-navegation li a.page-link {
+  color: rgb(110, 110, 110);
 }
 
 @media (min-width:992px) {

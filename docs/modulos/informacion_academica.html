@@ -7,149 +7,307 @@
 </head>
 <body>
     <!-- Main-->
-    <section id="main">
-        <div class="container mt-4">
-            <h3 class="titulo-azul text-center mb-0">Información Académica</h3>
-            <div class="row justify-content-center mt-4">
-                <div class="col-11 col-lg-9 mb-4">
-                    <div class="accordion" id="accordion-panel">
-                        <!-- Historia académica-->
-                        <div class="accordion-item shadow">
-                            <h2 class="accordion-header" id="panel-heading-one">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panel-collapseOne" aria-expanded="false" aria-controls="panel-collapseOne">
-                                    Historia académica
-                                </button>
-                            </h2>
-                            <div id="panel-collapseOne" class="accordion-collapse collapse" aria-labelledby="panel-headingOne">
-                                <div class="accordion-body">
-                                    <h5 class="text-center mt-2">Información del estudiante</h5>
-                                    <div class="table-responsive ps-1 pe-1">
-                                        <table class="table mb-0">
-                                            <tbody>
-                                                <tr>
-                                                    <td><h6 class="card-title">RUT</h6></td>
-                                                    <td>20.079.726-4</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h6 class="card-title">Nombres</h6></td>
-                                                    <td>Rodrigo Sebastián</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h6 class="card-title">Apellidos</h6></td>
-                                                    <td>Becerra Vera</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <h5 class="text-center mt-4">Información de la carrera</h5>
-                                    <div class="table-responsive ps-1 pe-1">
-                                        <table class="table mb-4">
-                                            <tbody>
-                                                <tr>
-                                                    <td><h6 class="card-title">Código</h6></td>
-                                                    <td>154</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h6 class="card-title">Carrera</h6></td>
-                                                    <td>Ingeniería civil en Informática</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h6 class="card-title">Plan</h6></td>
-                                                    <td>3</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h6 class="card-title">Ingreso</h6></td>
-                                                    <td>2017</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h6 class="card-title">Registro</h6></td>
-                                                    <td>2017123456</td>
-                                                </tr>
-                                                <tr>
-                                                    <td><h6 class="card-title">Estado</h6></td>
-                                                    <td>Regular</td>
-                                                </tr>
-                                            </tbody>
-                                        </table> 
-                                        <!-- <div  class="dropdown d-grid  text-center">
-                                            <a id="dropdown-button" class="btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                                              Dropdown link
-                                            </a>
-                                          
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                              <li><a class="dropdown-item" href="#">Action</a></li>
-                                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div> -->
-                                        <!-- <nav>
-                                            <div id="nav-tab" class="nav nav-tabs" id="nav-tab" role="tablist" >
-                                                <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Listado de cursos</a>
-                                                <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Competencias</a>
-                                                <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Créditos libre disposición</a>
-                                                <a class="nav-link" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Prueba de produccion de texto</a>
-                                                <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Avance curricular</a>
-                                                <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">PDF</a>
+    <div class="container mt-4">
+        <h3 class="titulo-azul text-center mb-0">Información Académica</h3>
+        <div class="row justify-content-center mt-4">
+            <div class="col-11 col-lg-9 mb-4">
+                <p>En esta sección encontrarás información académica: cursos inscritos, cursos aprobados, cursos reprobados, competencias genéricas y créditos de libre disposición.</p>
+                <div class="accordion"  id="accordion">
+                    <!-- Historia académica-->
+                    <div class="card shadow">
+                        <h2 class="accordion-header" id="panel-heading-one">
+                            <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#panel-collapseOne" aria-expanded="false" aria-controls="panel-collapseOne">
+                                Historia académica
+                            </button>
+                        </h2>
+                        <div id="panel-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panel-headingOne">
+                            <div class="card-body">
+                                <h5 class="text-center mt-2">Información del estudiante</h5>
+                                <div class="table-responsive ps-1 pe-1">
+                                    <table class="table mb-0" style="table-layout: fixed;" >
+                                        <tbody>
+                                            <tr>
+                                                <td><h6 class="card-title">RUT</h6></td>
+                                                <td>20.079.726-4</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Nombres</h6></td>
+                                                <td>Rodrigo Sebastián</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Apellidos</h6></td>
+                                                <td>Becerra Vera</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <h5 class="text-center mt-4">Información de la carrera</h5>
+                                <div class="table-responsive ps-1 pe-1">
+                                    <table class="table mb-4" style="table-layout: fixed;">
+                                        <tbody>
+                                            <tr>
+                                                <td><h6 class="card-title">Código</h6></td>
+                                                <td>154</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Carrera</h6></td>
+                                                <td>Ingeniería civil en Informática</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Plan</h6></td>
+                                                <td>3</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Ingreso</h6></td>
+                                                <td>2017</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Registro</h6></td>
+                                                <td>2017123456</td>
+                                            </tr>
+                                            <tr>
+                                                <td><h6 class="card-title">Estado</h6></td>
+                                                <td>Regular</td>
+                                            </tr>
+                                        </tbody>
+                                    </table> 
+                                    <select class="form-select  d-md-none"  aria-label="size 3 select example">
+                                        <option value="1" >Listado de cursos</option>
+                                        <option value="2"><a data-bs-target="#pills-competencias">Competencias</a></option>
+                                        <option value="3">Créditos libre disposición</option>
+                                        <option value="4">Prueba de producción de texto</option>
+                                    </select>  
+                                    <ul class="nav nav-pills d-none d-md-flex  mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="pills-listado-tab" data-bs-toggle="pill" data-bs-target="#pills-listado" type="button" role="tab" aria-controls="pills-listado" aria-selected="true">Listado de cursos</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="pills-competencias-tab" data-bs-toggle="pill" data-bs-target="#pills-competencias" type="button" role="tab" aria-controls="pills-competencias" aria-selected="false">Competencias</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="pills-creditos-tab" data-bs-toggle="pill" data-bs-target="#pills-creditos" type="button" role="tab" aria-controls="pills-creditos" aria-selected="false">Créditos libre disposición</a>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="pills-prueba-tab" data-bs-toggle="pill" data-bs-target="#pills-prueba" type="button" role="tab" aria-controls="pills-prueba" aria-selected="false">Prueba de produccion de texto</a>
+                                        </li>
+                                    </ul>
+                                    <div class="tab-content" id="pills-tabContent">
+
+                                        <!-- Listado de cursos -->
+                                        <div class="tab-pane fade show" id="pills-listado" role="tabpanel" aria-labelledby="pills-listado-tab">
+                                            <div class="container-fluid mb-2">
+                                                <div class="row">
+                                                    <div class="col-auto me-auto">
+                                                        <small>Cantidad de filas</small>
+                                                        <select id="select-filtro" class="form-select" aria-label="size 3 select example">
+                                                            <option value="1" >10</option>
+                                                            <option value="2">25</option>
+                                                            <option value="3">50</option>
+                                                            <option value="4">100</option>
+                                                        </select> 
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <small>Seleccione estado de cursos</small>
+                                                        <select id="select-estado" class="form-select" aria-label="size 3 select example">
+                                                            <option value="1" >Seleccione estado</option>
+                                                            <option value="2">Todos los cursos</option>
+                                                            <option value="3">Cursos aprobados</option>
+                                                            <option value="4">Cursos reprobados</option>
+                                                        </select> 
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </nav>
-                                        <div class="tab-content" id="nav-tabContent">
-                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Listado de cursos</div>
-                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Competencias</div>
-                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Creditos</div>
-                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Prueba</div>
-                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Avance</div>
-                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-                                        </div> -->
-                                        <select class="form-select  d-md-none"  aria-label="size 3 select example">
-                                            <option value="1" >Listado de cursos</option>
-                                            <option value="2"><a data-bs-target="#pills-competencias">Competencias</a></option>
-                                            <option value="3">Créditos libre disposición</option>
-                                            <option value="4">Prueba de producción de texto</option>
-                                        </select>  
-                                        <ul class="nav nav-pills d-none d-md-flex  mb-3" id="pills-tab" role="tablist">
-                                            <li class="nav-item" role="presentation">
-                                              <a class="nav-link active" id="pills-listado-tab" data-bs-toggle="pill" data-bs-target="#pills-listado" type="button" role="tab" aria-controls="pills-listado" aria-selected="true">Listado de cursos</a>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <a class="nav-link" id="pills-competencias-tab" data-bs-toggle="pill" data-bs-target="#pills-competencias" type="button" role="tab" aria-controls="pills-competencias" aria-selected="false">Competencias</a>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <a class="nav-link" id="pills-creditos-tab" data-bs-toggle="pill" data-bs-target="#pills-creditos" type="button" role="tab" aria-controls="pills-creditos" aria-selected="false">Créditos libre disposición</a>
-                                            </li>
-                                            <li class="nav-item" role="presentation">
-                                              <a class="nav-link" id="pills-prueba-tab" data-bs-toggle="pill" data-bs-target="#pills-prueba" type="button" role="tab" aria-controls="pills-prueba" aria-selected="false">Prueba de produccion de texto</a>
-                                            </li>
-                                        </ul>
-                                        <div class="tab-content" id="pills-tabContent">
-                                            <div class="tab-pane fade show active" id="pills-listado" role="tabpanel" aria-labelledby="pills-listado-tab">Listado de cursos</div>
-                                            <div class="tab-pane fade" id="pills-competencias" role="tabpanel" aria-labelledby="pills-competencias-tab">Competencias</div>
-                                            <div class="tab-pane fade" id="pills-creditos" role="tabpanel" aria-labelledby="pills-creditos-tab">Creditos</div>
-                                            <div class="tab-pane fade" id="pills-prueba" role="tabpanel" aria-labelledby="pills-prueba-tab">Prueba</div>
+                                            <div class="table-responsive">
+                                                <table class="table text-center">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Año</th>
+                                                            <th>Semestre</th>
+                                                            <th>Sigla</th>
+                                                            <th>Nombre curso</th>
+                                                            <th>Créditos</th>
+                                                            <th>Nota</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2017</td>
+                                                            <td>1</td>
+                                                            <td>INFO1122</td>
+                                                            <td>Introducción a los sistemas de base de datos</td>
+                                                            <td>5</td>
+                                                            <td>6.0</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2017</td>
+                                                            <td>1</td>
+                                                            <td>INFO1139</td>
+                                                            <td>Programación de robot</td>
+                                                            <td>5</td>
+                                                            <td>4.4</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <nav id="page-navegation" aria-label="Page navigation example">
+                                                    <ul class="pagination justify-content-md-center">
+                                                      <li class="page-item">
+                                                        <a class="page-link" tabindex="-1" aria-disabled="true">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link active">1</a></li>
+                                                      <li class="page-item"><a class="page-link">2</a></li>
+                                                      <li class="page-item"><a class="page-link">3</a></li>
+                                                      <li class="page-item"><a class="page-link">4</a></li>
+                                                      <li class="page-item"><a class="page-link">5</a></li>
+                                                      <li class="page-item"><a class="page-link">6</a></li>
+                                                      <li class="page-item">
+                                                        <a class="page-link">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                      </li>
+                                                    </ul>
+                                                  </nav>
+                                            </div>
+                                            <h6>Total créditos: 10</h6> 
+                                            <h6>Total créditos mínimos: 10</h6>
+                                            <h6>Total créditos mínimos aprobados: 10</h6>
+                                        </div> 
+                                        <!-- /Listado de cursos -->
+
+                                        <!-- Competencias -->
+                                        <div class="tab-pane fade" id="pills-competencias" role="tabpanel" aria-labelledby="pills-competencias-tab">
+                                            <div class="table-responsive">
+                                                <table class="table text-center">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Fecha</th>
+                                                            <th>Sigla</th>
+                                                            <th>Nombre Asignatura</th>
+                                                            <th>Sección</th>
+                                                            <th>Competencia</th>
+                                                            <th>Nivel</th>
+                                                            <th>Estado</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2017/07/13</td>
+                                                            <td>1</td>
+                                                            <td>INFO1122</td>
+                                                            <td>Introducción a los sistemas de base de datos</td>
+                                                            <td>APRENDIZAJE AUTÓNOMO</td>
+                                                            <td>1</td>
+                                                            <td>EVIDENCIA</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2017/07/14</td>
+                                                            <td>1</td>
+                                                            <td>INFO1139</td>
+                                                            <td>Programación de robot</td>
+                                                            <td>CREATIVIDAD E INNOVACIÓN</td>
+                                                            <td>1</td>
+                                                            <td>EVIDENCIA</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <nav id="page-navegation" aria-label="Page navigation example">
+                                                    <ul class="pagination justify-content-md-center">
+                                                      <li class="page-item">
+                                                        <a class="page-link" tabindex="-1" aria-disabled="true">
+                                                            <span aria-hidden="true">&laquo;</span>
+                                                        </a>
+                                                      </li>
+                                                      <li class="page-item"><a class="page-link active">1</a></li>
+                                                      <li class="page-item"><a class="page-link">2</a></li>
+                                                      <li class="page-item"><a class="page-link">3</a></li>
+                                                      <li class="page-item"><a class="page-link">4</a></li>
+                                                      <li class="page-item"><a class="page-link">5</a></li>
+                                                      <li class="page-item"><a class="page-link">6</a></li>
+                                                      <li class="page-item">
+                                                        <a class="page-link">
+                                                            <span aria-hidden="true">&raquo;</span>
+                                                        </a>
+                                                      </li>
+                                                    </ul>
+                                                  </nav>
+                                            </div>
                                         </div>
+                                        <!-- /Competencias -->
+
+                                        <!-- Creditos libre disposicion -->
+                                        <div class="tab-pane fade" id="pills-creditos" role="tabpanel" aria-labelledby="pills-creditos-tab">
+                                            <table class="table text-center">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Actividad</th>
+                                                        <th>Lugar</th>
+                                                        <th>Fechas</th>                                                    
+                                                        <th>Créditos</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                </tbody>
+                                            </table>
+                                            <h6>Total créditos:</h6> 
+                                        </div>
+                                        <!-- /Creditos libre disposicion -->
+
+                                        <!-- Prueba produccion de texto -->
+                                        <div class="tab-pane fade" id="pills-prueba" role="tabpanel" aria-labelledby="pills-prueba-tab">
+                                            <div class="table-responsive">
+                                                <table class="table text-center">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Año</th>
+                                                            <th>Semestre</th>
+                                                            <th>Sigla</th>
+                                                            <th>Nombre curso</th>
+                                                            <th>Créditos</th>
+                                                            <th>Situación</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>2017</td>
+                                                            <td>1</td>
+                                                            <td>PRODTEXTO1</td>
+                                                            <td>PRUEBA PRODUCCIÓN DE TEXTO</td>
+                                                            <td>0</td>
+                                                            <td>APROBADO</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <!-- /Prueba produccion de texto -->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- /Historia académica-->
-
-                        <!-- Cursos incritos-->
-                        <div class="accordion-item">
-                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                              Cursos inscritos
-                            </button>
-                          </h2>
-                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                            <div class="accordion-body">
-                            </div>
-                          </div>
-                        </div>
-                        <!-- /Cursos incritos-->
                     </div>
+                    <!-- /Historia académica-->
+
+                    <!-- Cursos incritos-->
+                    <div class="card shadow">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                        <button class="accordion-button collapsed rounded-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Cursos inscritos
+                        </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                        <div class="card-body">
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <!-- /Cursos incritos-->
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    
     <!-- /Main-->
 
     <script src="../lib/bootstrap/js/popper.min.js"></script>

@@ -29,6 +29,11 @@ html {
     /*text-shadow: 0 4px 4px rgba(0,0,0,0.25);*/
 }
 /*Agregado*/
+
+/* .navbar .collapse ul li {
+  font-size: 0.95rem;
+} */
+
 .navbarlink{
   color: white;
 }
