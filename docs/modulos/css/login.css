@@ -23,7 +23,6 @@ html {
 #header img{
   max-width: 80%;
 }
-
 .titulo-azul{
     color: #01568E;
     /*text-shadow: 0 4px 4px rgba(0,0,0,0.25);*/
@@ -37,10 +36,18 @@ html {
 .navbarlink{
   color: white;
 }
+.navbar .navbar-toggler{
+  border: 0; 
+  text-decoration: none;
+}
 
-/* Style page content */
-#main {
-  margin-left: 300px; /* Same as the width of the sidebar */
+.navbar .navbar-toggler span{
+  color: white;
+}
+
+a.btn.btn-primary{
+  background-color: #01568E;
+  border: 0;
 }
 
 #footer {
@@ -59,4 +66,9 @@ html {
 
 @media (max-width:767px){
   
+}
+@media (max-width:576px){
+  html{
+    font-size: 0.8rem;
+  }
 }
