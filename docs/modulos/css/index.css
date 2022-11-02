@@ -97,17 +97,11 @@
   text-decoration: none;
 }
 
-/*Agregado*/
-#subheaderlogin {
-  background: #038ACE;
-  margin-left: 0px;
-  height: 40px;
-}
 .titulo-azul{
     color: #01568E;
     /*text-shadow: 0 4px 4px rgba(0,0,0,0.45);*/
 }
-/*Agregado*/
+
 .navbarlink{
   color: white;
 }
@@ -142,7 +136,7 @@
 }
 
 .thead{
-  background-color: #01568E;
+  background-color: #038ACE;
   color: white;
 }
 
@@ -166,4 +160,16 @@
 
 @media (max-width:767px){
   
+}
+
+@media (max-width:576px){
+  html{
+    font-size: 0.8rem;
+  }
+  #carrera{
+    padding-top: 5px;
+  }
+  .timeline-with-icons .timeline-icon{
+    left: -42px;
+  }
 }

@@ -1,0 +1,44 @@
+#accordion .card{
+    border-top: 0px;
+}
+
+#accordion .card button{
+    background-color:#038ACE;
+    color: white;
+}
+
+.accordion-button::after{
+filter: brightness(0%) invert(100%);
+}
+
+#accordion a.nav-link.active{
+    color: #495057;
+}
+
+#accordion a.nav-link{
+    color: #038ACE;
+}
+
+.thead{
+    background-color: #038ACE;
+    color: white;
+}
+
+.form-check-input:checked{
+    background-color: #038ACE;
+}
+
+.text-secondary{
+    font-size: 0.9rem;
+}
+
+a.btn.btn-primary.mt-2{
+    background-color: #01568E;
+    border: 0;
+}
+
+@media (max-width:576px){
+    .text-secondary{
+        font-size: 0.7rem;
+    }
+}

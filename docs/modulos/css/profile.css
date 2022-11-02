@@ -2,6 +2,11 @@
   transition: 0s;
 }
 
+button.btn.btn-primary{
+  background-color: #01568E;
+  border: 0;
+}
+
 @media (min-width:991px) {
     #main{
       margin-left: 150px;

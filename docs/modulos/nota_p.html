@@ -1,0 +1,232 @@
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/nota_p.css">
+    <title>Solicitud Nota P</title>
+</head>
+
+<body>
+    <!-- Main-->
+    <div class="container mt-4">
+        <h3 class="titulo-azul text-center mb-0">Notas pendientes de evaluación</h3>
+        <div class="row justify-content-center mt-4">
+            <div class="col-11 col-lg-9 mb-4">
+                <p>La "Nota P" es la calificación utilizada en una determinada asignatura cuando no ha sido posible cumplir con la evaluación final del curso dentro de los plazos establecidos en el Calendario Académico.<br>
+                    La “Nota P” sólo podrá ser solicitada si se ha cumplido con al menos el 60% de las actividades y evaluaciones del curso.<br>
+                    Es responsabilidad de el o la estudiante que ha solicitado la “Nota P” completar la o las evaluaciones no rendidas, lo que permitirá reemplazar la “Nota P” por la calificación correspondiente. Si el o la estudiante no cumple dichas exigencias será calificado con nota uno (1,0).<br>
+                    El plazo máximo para mantener una “Nota P” será de un año.
+                    Para mayor información puedes solicitar el reglamento de Nota P del alumno de pregrado a <strong>dara@uct.cl</strong> o bien descargarlo del sitio web: <a href="https://dara.uct.cl" target="_blank">https://dara.uct.cl</a></p>
+                <div class="accordion mt-4"  id="accordion">
+                    <!-- Realizar solicitud-->
+                    <div class="card shadow">
+                        <h2 class="accordion-header" id="panel-headingOne">
+                        <button class="accordion-button collapsed rounded-top" type="button" data-bs-toggle="collapse" data-bs-target="#panel-collapseOne" aria-expanded="false" aria-controls="panel-collapseOne">
+                            Realizar solicitud
+                        </button>
+                        </h2>
+                        <div id="panel-collapseOne" class="accordion-collapse collapse" aria-labelledby="panel-headingOne">
+                            <div class="card-body mb-3">
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                      <a class="nav-link active" id="nav-solicitud-tab" type="button" data-bs-toggle="tab" data-bs-target="#nav-solicitud" type="button" role="tab" aria-controls="nav-solicitud" aria-selected="true">Nueva solicitud</a>
+                                      <a class="nav-link" id="nav-prorroga-tab" type="button" data-bs-toggle="tab" data-bs-target="#nav-prorroga" type="button" role="tab" aria-controls="nav-prorroga" aria-selected="false">Prórroga</a>
+                                    </div>
+                                </nav>
+                                <div class="tab-content mt-3" id="nav-tabContent">
+                                    <!-- Solicitud-->
+                                    <div class="tab-pane fade show active" id="nav-solicitud" role="tabpanel" aria-labelledby="nav-solicitud-tab">
+                                        <h6 class="text-center mb-4">Cursos inscritos en el semestre 2 año 2022</h6>
+                                        <h6 class="fw-light">Selecciona el o los cursos que deseas solicitar</h6>
+                                        <div class="table-responsive rounded-top shadow mb-5">
+                                            <table class="table text-center mb-0">
+                                                <thead class="thead">
+                                                    <tr>
+                                                        <th scope="col">Sel.</th>
+                                                        <th scope="col">Sigla</th>
+                                                        <th scope="col">Curso</th>
+                                                        <th scope="col">Sección</th>
+                                                        <th scope="col">Año</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div>
+                                                                <input class="form-check-input" type="checkbox" id="checkbox1" value="1" aria-label="...">
+                                                            </div>
+                                                        </td>
+                                                        <td>INFO1197</td>
+                                                        <td>Trabajo de título</td>
+                                                        <td>1</td>
+                                                        <td>2022</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div>
+                                                                <input class="form-check-input" type="checkbox" id="checkbox2" value="2" aria-label="...">
+                                                            </div>
+                                                        </td>
+                                                        <td>INFO1198</td>
+                                                        <td>Práctica profesional</td>
+                                                        <td>1</td>
+                                                        <td>2022</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <select class="form-select mb-2">
+                                                <option selected>Seleccione el motivo</option>
+                                                <option value="1">Académico</option>
+                                                <option value="2">Cambio de universidad</option>
+                                                <option value="3">Cambio interno UCT</option>
+                                                <option value="4">Disconformidad carrera</option>
+                                                <option value="5">Disconformidad universidad</option>
+                                                <option value="6">Económicos</option>
+                                                <option value="7">Hijos</option>
+                                                <option value="8">Otros</option>
+                                                <option value="9">Personales</option>
+                                                <option value="10">Salud</option>
+                                                <option value="11">Traslado</option>
+                                                <option value="12">Vocación</option>
+                                              </select>
+                                          </div>
+                                        <div class="mb-5">
+                                            <label for="exampleFormControlTextarea1" class="form-label mb-0">Observación</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <p class="text-secondary">
+                                                (Máx. 600 caracteres. Además se han bloqueado algunos caracteres especiales por temas de seguridad, ejemplo: * +-&%# ' ")
+                                            </p>
+                                        </div>
+                                        <h6 class="fw-light mb-2">Puedes subir archivos que respalden tu solicitud:</h6>
+                                        <div class="mb-1">   
+                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                        </div>
+                                        <p class="text-secondary">(Máximo 3 archivos, en formato PDF con un tamaño máx. de 5 MB.)</p>
+                                        <div class="text-center">
+                                            <a class="btn btn-primary mt-2" type="submit">Enviar</a>
+                                        </div>
+                                    </div>
+                                    <!-- /Solicitud-->
+
+                                    <!-- Prórroga-->
+                                    <div class="tab-pane fade" id="nav-prorroga" role="tabpanel" aria-labelledby="nav-solicitud-tab">
+                                        <h6 class="text-center mb-4">Cursos con nota pendiente</h6>
+                                        <h6 class="fw-light">Selecciona el o los cursos que deseas solicitar</h6>
+                                        <div class="table-responsive rounded-top shadow mb-5">
+                                            <table class="table text-center mb-0">
+                                                <thead class="thead">
+                                                    <tr>
+                                                        <th scope="col">Sel.</th>
+                                                        <th scope="col">Sigla</th>
+                                                        <th scope="col">Curso</th>
+                                                        <th scope="col">Sección</th>
+                                                        <th scope="col">Año</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div>
+                                                                <input class="form-check-input" type="checkbox" id="checkbox1" value="1" aria-label="...">
+                                                            </div>
+                                                        </td>
+                                                        <td>INFO1197</td>
+                                                        <td>Trabajo de título</td>
+                                                        <td>1</td>
+                                                        <td>2022</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div>
+                                            <select class="form-select mb-2">
+                                                <option selected>Seleccione el motivo</option>
+                                                <option value="1">Académico</option>
+                                                <option value="2">Cambio de universidad</option>
+                                                <option value="3">Cambio interno UCT</option>
+                                                <option value="4">Disconformidad carrera</option>
+                                                <option value="5">Disconformidad universidad</option>
+                                                <option value="6">Económicos</option>
+                                                <option value="7">Hijos</option>
+                                                <option value="8">Otros</option>
+                                                <option value="9">Personales</option>
+                                                <option value="10">Salud</option>
+                                                <option value="11">Traslado</option>
+                                                <option value="12">Vocación</option>
+                                              </select>
+                                          </div>
+                                        <div class="mb-5">
+                                            <label for="exampleFormControlTextarea1" class="form-label mb-0">Observación</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <p class="text-secondary">
+                                                (Máx. 600 caracteres. Además se han bloqueado algunos caracteres especiales por temas de seguridad, ejemplo: * +-&%# ' ")
+                                            </p>
+                                        </div>
+                                        <h6 class="fw-light mb-2">Puedes subir archivos que respalden tu solicitud:</h6>
+                                        <div class="mb-1">   
+                                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                                        </div>
+                                        <p class="text-secondary">(Máximo 3 archivos, en formato PDF con un tamaño máx. de 5 MB.)</p>
+                                        <div class="text-center">
+                                            <a class="btn btn-primary mt-2" type="submit">Enviar</a>
+                                        </div>
+                                    </div>
+                                    <!-- /Prórroga-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Realizar solicitud-->
+
+                    <!-- Solicitudes realizadas y resultados-->
+                    <div class="card shadow">
+                        <h2 class="accordion-header" id="panel-headingTwo">
+                        <button class="accordion-button collapsed rounded-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#panel-collapseTwo" aria-expanded="false" aria-controls="panel-collapseTwo">
+                            Solicitudes realizadas y resultados
+                        </button>
+                        </h2>
+                        <div id="panel-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panel-headingTwo">
+                        <div class="card-body">
+                            <h6 class="text-center mb-4">Cursos con nota pendiente</h6>
+                            <div class="table-responsive rounded-top shadow mb-1">
+                                <table class="table text-center mb-0">
+                                    <thead class="thead">
+                                        <tr>
+                                            <th scope="col">Año</th>
+                                            <th scope="col">Semestre</th>
+                                            <th scope="col">Fecha</th>
+                                            <th scope="col">Tipo solicitud</th>
+                                            <th scope="col">Estado</th>
+                                            <th scope="col">Ver PDF</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h6 class="text-center fw-normal mb-4">Nota: El detalle de la resolución la puedes ver en la segunda hoja del archivo Comprobante.pdf.</h6>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- /Solicitudes realizadas y resultados-->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- /Main-->
+
+    <script src="../lib/bootstrap/js/popper.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
