@@ -15,10 +15,10 @@
   filter: brightness(0%) invert(100%);
 }
 
-/* #dropdown-button{
-  background-color: #01568E; 
-  border: none;
-} */
+select.form-select.d-md-none.mb-4 option{
+  background-color: rebeccapurple;
+  font-size: .8rem;
+}
 
 .nav-pills .nav-link.active{
   background-color: #01568E;
