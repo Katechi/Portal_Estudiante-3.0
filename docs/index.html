@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./modulos/css/index.css">
     <title>Home</title>
 </head>
 <body>
@@ -22,8 +22,8 @@
                     <article class="card border-0">
                         <div class="card-body pt-0">
                             <div class="d-flex align-items-center">
-                                <a onclick="modulos('./profile.html')" class="m-0 p-0" type="button">
-                                    <img src="../images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
+                                <a onclick="modulos('./modulos/profile.html')" class="m-0 p-0" type="button">
+                                    <img src="./images/rodrigobecerra.png" alt="" width="60" height="60" class="rounded-circle me-2">
                                 </a>
                                 <strong class="text-white">Rodrigo Becerra</strong>
                             </div>
@@ -34,18 +34,18 @@
             </div>
             <div class="row">
                 <div id="modulos" class="col">
-                    <a href="../modulos/index.html">Inicio</a>
-                    <a id="solicitud" type="button" onclick="modulos('../modulos/nota_p.html')">Solicitud nota P</a>
-                    <a id="prestamos" type="button">Préstamos biblioteca</a>
-                    <a id="informacion" type="button" onclick="modulos('../modulos/informacion_academica.html')">Información académica</a>
-                    <a id="notas" type="button">Notas parciales</a>
+                    <a href="./index.html">Inicio</a>
+                    <a id="solicitud" type="button" onclick="modulos('./modulos/nota_p.html')">Solicitud nota P</a>
+                    <a id="prestamos" type="button" onclick="modulos('./modulos/prestamos_biblioteca.html')">Préstamos biblioteca</a>
+                    <a id="informacion" type="button" onclick="modulos('./modulos/informacion_academica.html')">Información académica</a>
+                    <a id="notas" type="button"  onclick="modulos('./modulos/notas_parciales.html')">Notas parciales</a>
                     <a id="cuenta" type="button">Cuenta corriente</a>
                     <a id="hora" type="button">Hora asistente social</a>
                     <a id="documentos" type="button">Documentos</a>
                     <a id="solicitudes" type="button">Solicitudes estudiantes</a>
                     <a id="ficha" type="button">Obs. ficha académica</a>
                     <a id="certificado" type="button">Certificado académico</a>
-                    <a href="./login.html">Cerrar sesión</a>
+                    <a href="./modulos/login.html">Cerrar sesión</a>
                     <hr style="color: white;">
                 </div>
             </div>
@@ -58,10 +58,10 @@
         <section id="header">
             <div class="container-fluid d-flex align-items-center pe-0">
                 <div class="me-auto">
-                    <a href="../modulos/index2.html"><img id="uctlogo" src="../images/logo-uct.png" alt="UCT logo"></a>
+                    <a href="./index.html"><img id="uctlogo" src="./images/logo-uct.png" alt="UCT logo"></a>
                 </div>
                 <div class="text-end">
-                    <img src="../images/portal.png"  alt="Portal del Estudiante">
+                    <img src="./images/portal.png"  alt="Portal del Estudiante">
                 </div>
             </div>
         </section>
@@ -73,7 +73,7 @@
                        <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; </span>
                     </div>
                     <div id="carrera" class="col text-end ps-0 mt-1">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <!-- Trigger modal -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                             <small class="text-white">154: INGENIERÍA CIVIL EN INFORMÁTICA</small>
                         </a> 
                     </div>
@@ -255,9 +255,9 @@
     </section>
     <!-- /Main-->
 
-    <script src="../lib/bootstrap/js/popper.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../modulos/js/index.js"></script>
+    <script src="./lib/bootstrap/js/popper.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./modulos/js/index.js"></script>
     <script>
         function modulos(ruta){
             const http = new XMLHttpRequest();
