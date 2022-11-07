@@ -16,7 +16,6 @@
 }
 
 select.form-select.d-md-none.mb-4 option{
-  background-color: rebeccapurple;
   font-size: .8rem;
 }
 
@@ -38,6 +37,8 @@ select.form-select.d-md-none.mb-4 option{
   width:180px;
 }
 
+
+
 #page-navegation li a.page-link.active {
   color: #038ACE;
 }
@@ -46,8 +47,4 @@ select.form-select.d-md-none.mb-4 option{
   color: rgb(110, 110, 110);
 }
 
-@media (min-width:992px) {
-  #main{
-    margin-left: 150px;
-  }
-}
+

@@ -112,9 +112,9 @@
                                                         </select> 
                                                     </div>
                                                     <div class="col-auto">
-                                                        <small>Seleccione estado de cursos</small>
+                                                        <small>Selecciona estado de cursos</small>
                                                         <select id="select-estado" class="form-select" aria-label="size 3 select example">
-                                                            <option value="1" >Seleccione estado</option>
+                                                            <option value="1" >Selecciona estado</option>
                                                             <option value="2">Todos los cursos</option>
                                                             <option value="3">Cursos aprobados</option>
                                                             <option value="4">Cursos reprobados</option>
@@ -296,15 +296,111 @@
 
                     <!-- Cursos incritos-->
                     <div class="card shadow">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-                        <button class="accordion-button collapsed rounded-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        <h2 class="accordion-header" id="panels-headingTwo">
+                        <button class="accordion-button collapsed rounded-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#panels-collapseTwo" aria-expanded="false" aria-controls="panels-collapseTwo">
                             Cursos inscritos
                         </button>
                         </h2>
-                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-                        <div class="card-body">
-                            
-                        </div>
+                        <div id="panels-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panels-headingTwo">
+                            <div class="card-body">
+                                <p> Puedes modificar el año y el semestre para consultar otras cargas académicas. Al hacer click en el boton 'Generar Certificado', se genererá un archivo con extension .PDF que posee toda la información de tus cursos inscritos.</p>
+                                <div class="container-fluid mb-2 p-0">
+                                    <div class="row justify-content-start">
+                                        <div class="col col-sm-6 col-md-3">
+                                            <small>Selecciona un año</small>
+                                            <select id="select-anho" class="form-select">
+                                                <option value="1">2019</option>
+                                                <option value="2">2020</option>
+                                                <option value="3">2021</option>
+                                                <option value="4">2022</option>
+                                            </select> 
+                                        </div>
+                                        <div class="col col-sm-6 col-md-3">
+                                            <small>Selecciona un semestre</small>
+                                            <select id="select-semestre" class="form-select">
+                                                <option value="1">Primer semestre</option>
+                                                <option value="2">Segundo semestre</option>
+                                            </select> 
+                                        </div>
+                                        <div class="col-12 col-md-6 mt-4">
+                                            <button class="btn btn-outline-success border-0" type="submit">Ver carga académica</button>
+                                            <button class="btn btn-outline-success border-0" type="submit">Generar PDF</button>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-center mt-4 mb-0">Carga académica</h5>
+                                    <div class="row mt-1">
+                                        <div class="col-auto me-auto">
+                                            <small>Cantidad de filas</small>
+                                            <select id="select-filtro" class="form-select" aria-label="size 3 select example">
+                                                <option value="1" >10</option>
+                                                <option value="2">25</option>
+                                                <option value="3">50</option>
+                                                <option value="4">100</option>
+                                            </select> 
+                                        </div>
+                                        <div class="col-auto mt-3">
+                                            <form class="d-flex">
+                                                <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
+                                                <button class="btn btn-outline-success border-0" type="submit">Buscar</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="table text-center">
+                                            <thead>
+                                                <tr>
+                                                    <th>Año</th>
+                                                    <th>Semestre</th>
+                                                    <th>Sigla</th>
+                                                    <th>Nombre curso</th>
+                                                    <th>Sección</th>
+                                                    <th>Créditos</th>
+                                                    <th>Tipo</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2017</td>
+                                                    <td>1</td>
+                                                    <td>INFO1122</td>
+                                                    <td>Introducción a los sistemas de base de datos</td>
+                                                    <td>1</td>
+                                                    <td>5</td>
+                                                    <td>MIN</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2017</td>
+                                                    <td>1</td>
+                                                    <td>INFO1139</td>
+                                                    <td>Programación de robot</td>
+                                                    <td>1</td>
+                                                    <td>5</td>
+                                                    <td>MIN</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <nav id="page-navegation" aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-md-center">
+                                            <li class="page-item">
+                                                <a class="page-link" tabindex="-1" aria-disabled="true">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link active">1</a></li>
+                                            <li class="page-item"><a class="page-link">2</a></li>
+                                            <li class="page-item"><a class="page-link">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                            </ul>
+                                        </nav>
+                                        <h5 class="text-center mt-4 mb-0">Salas asignadas</h5>
+                                    </div>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                     <!-- /Cursos incritos-->
