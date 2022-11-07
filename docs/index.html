@@ -40,7 +40,7 @@
                     <a id="informacion" type="button" onclick="modulos('./modulos/informacion_academica.html')">Información académica</a>
                     <a id="notas" type="button"  onclick="modulos('./modulos/notas_parciales.html')">Notas parciales</a>
                     <a id="cuenta" type="button">Cuenta corriente</a>
-                    <a id="hora" type="button">Hora asistente social</a>
+                    <a id="hora" type="button" onclick="modulos('./modulos/hora_asist_social.html')">Hora asistente social</a>
                     <a id="documentos" type="button">Documentos</a>
                     <a id="solicitudes" type="button">Solicitudes estudiantes</a>
                     <a id="ficha" type="button">Obs. ficha académica</a>
@@ -258,6 +258,7 @@
     <script src="./lib/bootstrap/js/popper.min.js"></script>
     <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="./modulos/js/index.js"></script>
+    <script src="./modulos/js/hora_asist_social.js"></script>
     <script>
         function modulos(ruta){
             const http = new XMLHttpRequest();

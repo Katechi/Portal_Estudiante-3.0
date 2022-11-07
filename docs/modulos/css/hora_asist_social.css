@@ -1,0 +1,53 @@
+#accordion .card{
+  border-top: 0px;
+}
+
+#accordion .card button{
+    background-color:#038ACE;
+    color: white;
+}
+
+#panel-collapseOne #table{
+  table-layout: fixed;
+}
+
+.accordion-button::after{
+  filter: brightness(0%) invert(100%);
+}
+
+select.form-select.d-md-none.mb-4 option{
+  background-color: rebeccapurple;
+  font-size: .8rem;
+}
+
+.nav-pills .nav-link.active{
+  background-color: #01568E;
+}
+
+.nav-pills .nav-link{
+  color: #038ACE;
+}
+
+#select-filtro{
+  font-size: 0.9rem; 
+  width:75px;
+}
+
+#select-estado{
+  font-size: 0.9rem; 
+  width:180px;
+}
+
+#page-navegation li a.page-link.active {
+  color: #038ACE;
+}
+
+#page-navegation li a.page-link {
+  color: rgb(110, 110, 110);
+}
+
+@media (min-width:992px) {
+  #main{
+    margin-left: 150px;
+  }
+}
