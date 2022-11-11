@@ -105,7 +105,72 @@
                         </h2>
                         <div id="panels-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panels-headingTwo">
                         <div class="card-body">
-                            
+                            <div class="container-fluid mb-2 p-0">
+                                <div class="row justify-content-start">
+                                    <div class="col col-sm-6 col-md-3">
+                                        <small>Selecciona un semestre</small>
+                                        <select id="select-semestre" class="form-select">
+                                            <option value="1">Primer semestre</option>
+                                            <option value="2">Segundo semestre</option>
+                                        </select> 
+                                    </div>
+                                    <div class="col col-sm-6 col-md-3">
+                                        <small>Selecciona una asignatura</small>
+                                        <select id="select-asignatura" class="form-select">
+                                            <option value="1">TRABAJO DE TÍTULO</option>
+                                            <option value="2">PRÁCTICA PROFESIONAL</option>
+                                        </select> 
+                                    </div>
+                                </div>
+                                <h5 class="text-center mt-4 mb-0">Asistencia</h5>
+                                <div class="row mt-1">
+                                    <div class="col-auto me-auto">
+                                        <small>Cantidad de filas</small>
+                                        <select id="select-filtro" class="form-select" aria-label="size 3 select example">
+                                            <option value="1" >10</option>
+                                            <option value="2">25</option>
+                                            <option value="3">50</option>
+                                            <option value="4">100</option>
+                                        </select> 
+                                    </div>
+                                    <div class="col-auto mt-3">
+                                        <form class="d-flex">
+                                            <input class="form-control me-2" type="buscar" placeholder="Buscar" aria-label="Buscar">
+                                            <button class="btn btn-outline-success border-0" type="submit">Buscar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table text-center">
+                                        <thead>
+                                            <tr>
+                                                <th>Nro clase</th>
+                                                <th>Fecha</th>
+                                                <th>Hora inicio</th>
+                                                <th>asistencia</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        
+                                        </tbody>
+                                    </table>
+                                    <nav id="page-navegation" aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-md-center">
+                                        <li class="page-item">
+                                            <a class="page-link" tabindex="-1" aria-disabled="true">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link active">1</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
                         </div>
                         </div>
                     </div>
