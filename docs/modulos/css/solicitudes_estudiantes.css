@@ -1,0 +1,12 @@
+#accordion .card{
+    border-top: 0px;
+}
+
+#accordion .card button{
+    background-color:#038ACE;
+    color: white;
+}
+
+.accordion-button::after{
+filter: brightness(0%) invert(100%);
+}
